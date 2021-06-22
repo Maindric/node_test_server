@@ -1,9 +1,9 @@
 const http = require("http");
 
-const server = http.createServer((request, reponse) => {
-    Response.end("Hello, Galvanize!");
+const server = http.createServer((request, response) => {
+    response.end("Hello, Galvanize!");
 })
 
-server.listen(3000, "127.0.0.1", () => {
-    console.log('Server is running at http://127.0.0.1:3000');
+server.listen(3000, "localhost", () => {
+    console.log('Server is running at http://localhost:3000');
 })
